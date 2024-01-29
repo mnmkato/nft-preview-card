@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-family: outfit;
+}
+.container{
+    width: min-content;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 10px hsl(217, 54%, 10%);
+}
+.nft-image-div{
+    display: inline-block;
+    position: relative;
+    width: 18rem;
+    border-radius: 0.5rem;
+}
+.nft-image{
+    width: 18rem;
+    border-radius: 0.5rem;
+}
+.view-icon-div{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18rem;
+    height: 18rem;
+    background-color: hsl(178, 100%, 50%, 0.5);
+}
+.view-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nft-image-div:hover .view-icon-div{
+    cursor: pointer;
+    display: block;
+}
+p{
+    font-size: 18px;
+}
+.price-time-div{
+    display: flex;
+    justify-content: space-between;
+}
+.price-time-div>div{
+    display: flex;
+    align-items: center;
+}
+.price-time-div img{
+    margin-right: 0.5rem;
+}
+.price-div{
+    color: hsl(178, 100%, 50%);
+}
+.time-div{
+    color:  hsl(215, 51%, 70%);
+}
+.nft-creator-div{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.nft-creator-div>img{
+    height: 2rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+h2,.nft-creator-name{
+color: hsl(0, 0%, 100%);
+}
+h2:hover,.nft-creator-name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%) ;
+}
